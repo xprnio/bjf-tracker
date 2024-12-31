@@ -1,0 +1,10 @@
+[Unit]
+Description=BJF Tracker
+
+[Service]
+Type=simple
+ExecStart=$HOME/.local/bin/bjf-tracker
+Environment="CMC_API_KEY=$CMC_API_KEY"
+
+[Install]
+WantedBy=default.target
